@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>Wordpress-seed presentation</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+	<style>
+		.slide{
+			padding-top: 45px;
+			font-size: 20px;
+		}
+	</style>
 </head>
 <body class="shower list">
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>Wordpress seed presentation</h1>
+		<p>Yura Levantovych, WebCodium</p>
 	</header>
 	<section class="slide" id="cover">
-		<h2>My Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+		<h2>Wordpress seed</h2>
+		<p>You can find the seed <a href="https://bitbucket.org/webcodium/wordpress-seed" target="_blank">Wordpress-seed at Bitbucket</a></p>
 		<img src="pictures/cover.jpg" alt="" class="cover">
 		<!--
 			To apply styles to the certain slides
@@ -40,126 +46,46 @@
 		</style>
 	</section>
 	<section class="slide">
-		<h2>Shower key features</h2>
+		<h2>For using this seed you should:</h2>
 		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-	</section>
-	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-	</section>
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
+			<li>Download latest <a href="https://wordpress.org/download/">wordpress</a></li>
+  			<li class="next">Go to folder themes <mark>wp-content/themes</mark>.</li>
+			<li class="next">Here type and run <br><code>git clone git@bitbucket.org:webcodium/wordpress-seed.git</code></li>
+  			<li class="next">
+  				Type and run <code>php wordpress-seed/set.php</code> <i>(Then at first you should type a current name theme then a new name of theme)</i>
+  				<p class="note">You have to add a PATH environment for php in Windows OS.</p>
+	  		</li>
 		</ol>
 	</section>
 	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
-	</section>
-	<section class="slide">
-		<h2>Code samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <mark class="comment">&lt;!--Comment--&gt;</mark></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
-	</section>
-	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
-	</section>
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="" class="cover">
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
-	</section>
-	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
-	</section>
-	<section class="slide">
-		<h2>Inner navigation</h2>
+		<h2>The latest command does next:</h2>
 		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
+			<li>Removes and deregister no need files</li>
+			<li>Rename theme</li>
+			<li>Add cache busting</li>
+			<li>Make new assets structure for project</li>
+			<li>Sets up <code>gulp</code></li>
+			<li>Installs <code>bower</code> and <code>npm</code> dependncies</li>
+			<li>Adds <mark>.gitignore</mark></li>
+			<li>Creates your own <mark>functions.php</mark> which will include to <mark>functions.php</mark> <i>(name will be called <mark>functions-[new name of theme].php</mark>)</i></li>
+			<li>Adds <mark>vendor.json</mark> and <mark>vendor.base.json</mark></li>
 		</ol>
 	</section>
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
+	<section class="slide">
+		<h2>Developing:</h2>
+		<ul>
+			<li>For watching a project you should run <code>gulp</code>.</li>
+			<li class="next">For building project for production you should run <code>gulp --production</code>.</li>
+			<li class="next">In the <mark>functions-[new name of theme].php</mark> exists <code>get_asset_version</code> which allows load assets with cache busting</li>
+			<li class="next">In the <mark>functions-[new name of theme].php</mark>  can find commented string with called function <code>wp_enqueue_style</code> you can uncomment if you want load a <mark>Cuprum</mark> font as in example or change to other font if you need.</li>
+			<li class="next"><mark>vendor.base.json</mark> - this file allows include js files which will be added to main js file <i>(this seed includes <mark>jquery</mark>)</i></li>
+			<li class="next"><mark>vendor.json</mark> - this file will copy files and will add to <mark>assets/vendor</mark> folder <i>(this seed includes <mark>bootstrap</mark>)</i></li>
+		</ul>
 	</section>
+	
 	<section class="slide" id="see-more">
 		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
+			<a href="https://bitbucket.org/webcodium/wordpress-seed" target="_blank">See more on Bitbucket</a>
 		</h2>
 		<style>
 			#see-more h2 {
@@ -171,9 +97,14 @@
 				}
 		</style>
 	</section>
-	<p class="badge">
+
+	<section class="slide">
+		<h2 class="shout shrink">Thank you</h2>
+	</section>
+	
+	<!-- <p class="badge">
 		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</p>
+	</p> -->
 	<!--
 		To hide progress bar from entire presentation
 		just remove “progress” element.
